@@ -22,7 +22,7 @@ module.exports = class CamClient extends AkairoClient {
 
         this.urls = {
             server: "https://discord.gg/cYxEDNN",
-            me: "https://discord.com/api/oauth2/authorize?client_id=378909180666314754&permissions=388160&scope=bot"
+            me: "https://discord.com/oauth2/authorize?client_id=378909180666314754&permissions=8&scope=bot"
         }
 
         this.oldColor = 0xFF69B4; // Hot Pink for archival purposes.

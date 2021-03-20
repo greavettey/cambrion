@@ -12,7 +12,7 @@ module.exports = class InviteCommand extends Command {
     
     exec(msg) {
         const embed = new MessageEmbed()
-            .setDescription(`From here you can\n  •  invite me to your server [here](${this.client.urls.me}))`)
+            .setDescription(`From here you can\n  •  [invite me to your server](${this.client.urls.me})`)
             .setColor(this.client.color)
 
         msg.util.send(embed);
