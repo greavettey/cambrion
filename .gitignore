@@ -1,0 +1,6 @@
+node_modules/**
+.env
+log.txt
+*.log.txt
+*.heapsnapshot
+config.js
