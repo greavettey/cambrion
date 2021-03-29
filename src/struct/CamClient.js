@@ -39,8 +39,15 @@ module.exports = class CamClient extends AkairoClient {
             "822484499941556224", // KALOS
             "822484534427385918", // ALOLA
             "822484558594179072", // GALAR
-            "822657913435848704" // TEST 
+            "822657913435848704"  // TEST 
         ];
+
+        this.swears = [
+            "fuck",
+            "shit",
+            "bitch",
+            "cunt"
+        ]
 
         this.commandsExecuted = 0;
         this.messagesSeen = 0;

@@ -13,7 +13,7 @@ module.exports = class MessageListener extends Listener {
 
         let chan = message.channel;
         if (this.client.pokemonChannels.includes(chan.id) && !this.client.config.serverAdmins.includes(message.author.id) && !message.author.bot) {
-            return setTimeout(async () => await message.delete(), 3000);
+            return await message.delete();
         } else return;
     }
 }
