@@ -8,7 +8,7 @@ const yes = ["yes", "y", "ye", "yeah", "yup", "yea", "ya"];
 const no = ["no", "n", "nah", "nope", "nop"];
 
 /**
- * VV's utility class
+ * Cambrion's utility class
  */
 module.exports = class Utils {
     /**

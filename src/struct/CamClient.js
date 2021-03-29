@@ -42,13 +42,6 @@ module.exports = class CamClient extends AkairoClient {
             "822657913435848704"  // TEST 
         ];
 
-        this.swears = [
-            "fuck",
-            "shit",
-            "bitch",
-            "cunt"
-        ]
-
         this.commandsExecuted = 0;
         this.messagesSeen = 0;
 
@@ -67,7 +60,7 @@ module.exports = class CamClient extends AkairoClient {
                 prompt: {
                     timeout: "Time ran out, so I cancelled the command.",
                     ended: "There were too many retries, so I cancelled the command.",
-                    cancel: "That command has been cancelled.",
+                    cancel: "That command's been cancelled.",
                     retries: 4,
                     time: 100000
                 }

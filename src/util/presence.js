@@ -17,7 +17,7 @@ module.exports = [
     { type: 4, name: "data to Git" },
     { type: 3, name: "Axel play games" },
     { type: 2, name: "Vampire Weekend" },
-    { type: 2, name: "Big Sean's new album" },
+    { type: 2, name: "The Smashing Pumpkins" },
     { type: 2, name: "Lil Wayne" },
     { type: 3, name: "TENET" },
     { type: 3, name: "RE:ZERO" },
@@ -27,6 +27,8 @@ module.exports = [
     { type: 0, name: "Mondegreen" },
     { type: 0, name: "Cards Against Humanity" },
     { type: 2, name: "Childish Gambino" },
-    { type: 0, name: "with Medusa" },
-    { type: 2, name: "the Siren's song" }
+    { type: 0, name: "with skwid" },
+    { type: 2, name: "the Siren's song" },
+    { type: 2, name: "Chop Suey!" },
+    { type: 2, name: "My Beautiful Dark Twisted Fantasy" }
 ];
