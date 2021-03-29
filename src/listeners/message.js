@@ -8,7 +8,7 @@ module.exports = class MessageListener extends Listener {
         });
     }
 
-    exec(message) {
+    async exec(message) {
         this.client.messagesSeen++;
 
         let chan = message.channel;
