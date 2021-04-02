@@ -30,7 +30,7 @@ module.exports = class GenerateCommandsCommand extends Command {
                 }).join("\n")}`;
         });
 
-        let text = `## General Information\n\nCurrent Prefixes: \`${this.client.prefix}\`, mentions (${msg.guild.me})\n\nTotal Commands: ${this.client.commandHandler.modules.size}\n\n## Available Commands\n${list.join("\n")}`;
+        let text = `## General Information\n\nCurrent Prefixes: \`${this.client.prefix}\`, mentions (@${this.client.user.username}#${this.client.user.discriminator})\n\nTotal Commands: ${this.client.commandHandler.modules.size}\n\n## Available Commands\n${list.join("\n")}`;
 
         if(!readme) {
             return msg.util.send("Successfully generated `generated.txt`.", {

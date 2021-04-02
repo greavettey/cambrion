@@ -3,7 +3,7 @@ A pretty cool Discord bot.
 
 ## General Information
 
-Current Prefixes: `>`, mentions (<@378909180666314754>)
+Current Prefixes: `>`, mentions (@Cambrion#3046)
 
 Total Commands: 26
 
