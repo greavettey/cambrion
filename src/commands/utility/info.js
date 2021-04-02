@@ -14,9 +14,9 @@ module.exports = class InfoCommand extends Command {
 
     exec(msg) {
         const embed = new MessageEmbed()
-            .setTitle("I'm Cambrion.")
+            .setTitle(`Cambrion v${this.client.version}`)
             .setDescription(stripIndents`              
-                I was made by Skkeys ${findMember(msg, this.client.ownerID[0], false) ? "(<@!" + findMember(msg, this.client.ownerID[0], false) + ">)" : ""} in Node.JS using the Discord.JS and Akairo libraries.
+                I was made by Skkeys ${findMember(msg, this.client.ownerID[0], false) ? "(<@!" + findMember(msg, this.client.ownerID[0], false) + ">)" : ""} in Node.JS using the Discord.js and Akairo libraries.
 
                 I'm currently sitting in **${this.client.guilds.cache.size}** server${(this.client.guilds.cache.size > 1 ? "s" : "")}. I have **${this.client.commandHandler.modules.size}** useable commands, and a total uptime of **${uptime().humanized}**.
             `)

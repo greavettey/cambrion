@@ -1,6 +1,6 @@
 {
   "name": "Cambrion",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "description": "A Discord bot that you DO NOT want to mess with.",
   "main": "src/Cambrion.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "node": "12.0.0",
     "npm": "6.9.0"
   },
-  "author": "Axel Greavette",
+  "author": "Skkeys",
   "private": true,
   "license": "MIT",
   "dependencies": {
