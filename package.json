@@ -1,6 +1,6 @@
 {
-  "name": "Cambrion",
-  "version": "2.1.5",
+  "name": "cambrion",
+  "version": "2.1.6",
   "description": "A Discord bot that you DO NOT want to mess with.",
   "main": "src/Cambrion.js",
   "scripts": {

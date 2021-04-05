@@ -4,8 +4,10 @@
         "Axel's",
         "Webhook",
         "bufferutil",
+        "chewey",
         "cmds",
         "erlpack",
+        "esnext",
         "reactionmenu",
         "signale",
         "webhooks"

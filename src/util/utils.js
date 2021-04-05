@@ -50,8 +50,10 @@ module.exports = class Utils {
      * @param {string} text Text to shorten
      * @param {Number} maxLen Maximum length of text
      */
-    static shorten(text, maxLen = 2000) {
-        return text.length > maxLen ? `${text.substr(0, maxLen - 3)}...` : text;
+    static shorten(text, maxLen = 2000, readMore = "") {
+        if(readMore == "" && text.length > maxLen) return `${text.substr(0, maxLen - 3)}...`
+        else if(readMore != "" && text.length > maxLen) return `${text.substr(0, maxLen - 17)}... [read more](${readMore})...`
+        else return text;
     }
 
     /**

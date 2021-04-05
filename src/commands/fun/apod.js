@@ -14,15 +14,18 @@ module.exports = class APODCommand extends Command {
     }
 
     async exec(msg) {
-        let apod = await get(`https://api.nasa.gov/planetary/apod?api_key=${this.client.config.nasa}`);
+        let td = new Date();
+        td = `${td.getUTCFullYear()}-${td.getUTCMonth() + 1}-${td.getUTCDate()}`;
+
+        let { data } = await get(`https://api.nasa.gov/planetary/apod?api_key=${this.client.config.nasa}&date=${td}`);
 
         const embed = new MessageEmbed()
-            .setTitle(`Astronomy Picture of the Day: ${apod.data.title}`)
-            .setDescription(shorten(apod.data.explanation, 2000))
-            .setImage(apod.data.hdurl)
-            .setFooter(`Copyright ${apod.data.copyright}`)
-            .setTimestamp(apod.data.date)
+            .setTitle(data.title)
+            .setDescription(shorten(data.explanation, 300, "https://apod.nasa.gov/apod/"))
+            .setImage(data.url)
             .setColor(this.client.color);
+
+        data.copyright ? embed.setFooter(`Copyright © ${data?.copyright} • ${td.replace(/-/g, "/").split("/").reverse().join("/")}`) : embed.setFooter(`Cheers NASA • ${td.replace(/-/g, "/").split("/").reverse().join("/")}`);
 
         return msg.util.send(embed);
     }
