@@ -293,4 +293,13 @@ module.exports = class Utils {
         
 	    return result;
     }
+    
+    /**
+     * @param {string} id
+     * @param {boolean} [animated]
+     */
+    static emojiURL(id, animated = false) {
+        const ext = animated ? "gif" : "png"
+        return `https://cdn.discordapp.com/emojis/${id}.${ext}`
+    }
 }

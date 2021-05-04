@@ -15,7 +15,7 @@ module.exports = class ChangelogCommand extends Command {
 
     async exec(msg) {
         let { data: res } = await axios({
-            url: "https://api.github.com/repos/skkeys/cambrion/commits",
+            url: "https://api.github.com/repos/str1ngtheory/cambrion/commits",
             headers: {
                 "User-Agent": "Cambrion",
             }
